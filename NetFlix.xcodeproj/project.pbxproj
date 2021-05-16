@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8807AE132651144100E9AE94 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807AE122651144100E9AE94 /* Episode.swift */; };
+		8807AE1526515BB200E9AE94 /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807AE1426515BB200E9AE94 /* CustomTabSwitcher.swift */; };
 		88EBC21C264F9EAD00618627 /* NetFlixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EBC209264F9EAD00618627 /* NetFlixApp.swift */; };
 		88EBC21D264F9EAD00618627 /* NetFlixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EBC209264F9EAD00618627 /* NetFlixApp.swift */; };
 		88EBC21E264F9EAD00618627 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EBC20A264F9EAD00618627 /* ContentView.swift */; };
@@ -21,11 +23,13 @@
 		88EBC236264FA0F300618627 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EBC235264FA0F300618627 /* HomeVM.swift */; };
 		88EBC238264FA6A400618627 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EBC237264FA6A400618627 /* TopMoviePreview.swift */; };
 		88EBC23A264FAD5000618627 /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EBC239264FAD5000618627 /* SmallVerticalButton.swift */; };
-		88EBC23C264FB07E00618627 /* WhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EBC23B264FB07E00618627 /* WhiteButton.swift */; };
+		88EBC23C264FB07E00618627 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EBC23B264FB07E00618627 /* PlayButton.swift */; };
 		88EBC243264FC33600618627 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EBC242264FC33600618627 /* MovieDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8807AE122651144100E9AE94 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		8807AE1426515BB200E9AE94 /* CustomTabSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabSwitcher.swift; sourceTree = "<group>"; };
 		88EBC209264F9EAD00618627 /* NetFlixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetFlixApp.swift; sourceTree = "<group>"; };
 		88EBC20A264F9EAD00618627 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		88EBC20B264F9EAD00618627 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,7 +45,7 @@
 		88EBC235264FA0F300618627 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		88EBC237264FA6A400618627 /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 		88EBC239264FAD5000618627 /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
-		88EBC23B264FB07E00618627 /* WhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteButton.swift; sourceTree = "<group>"; };
+		88EBC23B264FB07E00618627 /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		88EBC242264FC33600618627 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				88EBC237264FA6A400618627 /* TopMoviePreview.swift */,
-				88EBC23B264FB07E00618627 /* WhiteButton.swift */,
+				88EBC23B264FB07E00618627 /* PlayButton.swift */,
 				88EBC239264FAD5000618627 /* SmallVerticalButton.swift */,
 				88EBC231264F9FBE00618627 /* StandardHomeMovie.swift */,
 			);
@@ -139,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				88EBC22F264F9F9600618627 /* Movie.swift */,
+				8807AE122651144100E9AE94 /* Episode.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				88EBC242264FC33600618627 /* MovieDetail.swift */,
+				8807AE1426515BB200E9AE94 /* CustomTabSwitcher.swift */,
 			);
 			path = DetailMovie;
 			sourceTree = "<group>";
@@ -263,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88EBC234264FA00900618627 /* GlobalHelpers.swift in Sources */,
+				8807AE132651144100E9AE94 /* Episode.swift in Sources */,
 				88EBC22B264F9EDD00618627 /* HomeView.swift in Sources */,
 				88EBC236264FA0F300618627 /* HomeVM.swift in Sources */,
 				88EBC21E264F9EAD00618627 /* ContentView.swift in Sources */,
@@ -270,8 +277,9 @@
 				88EBC238264FA6A400618627 /* TopMoviePreview.swift in Sources */,
 				88EBC230264F9F9600618627 /* Movie.swift in Sources */,
 				88EBC21C264F9EAD00618627 /* NetFlixApp.swift in Sources */,
+				8807AE1526515BB200E9AE94 /* CustomTabSwitcher.swift in Sources */,
 				88EBC23A264FAD5000618627 /* SmallVerticalButton.swift in Sources */,
-				88EBC23C264FB07E00618627 /* WhiteButton.swift in Sources */,
+				88EBC23C264FB07E00618627 /* PlayButton.swift in Sources */,
 				88EBC243264FC33600618627 /* MovieDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
