@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CustomTabSwitcher: View {
     
+    @State private var currentTab: CustomTab = .episode
     var tabs: [CustomTab]
     
     func widthForTab(_ tab: CustomTab) -> CGFloat {
@@ -25,6 +26,7 @@ struct CustomTabSwitcher: View {
                             // red bar
                             Rectangle()
                                 .frame(width: widthForTab(tab), height: 6)
+                                .foregroundColor(.red)
                             
                             //button
                             Button(action: {
