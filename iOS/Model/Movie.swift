@@ -17,13 +17,16 @@ struct Movie:Identifiable {
     var year: Int
     var rating: String
     var numberOfSeasons: Int?
-    var episodes: [Episode]?
     var promotionHeadline: String?
     var currentEpisode: CurrentEpisodeInfo?
     var defaultEpisodeInfo: CurrentEpisodeInfo
+    var moreLikeThisMovies: [Movie]
     
     var creators: String
     var cast: String
+    
+    var trailerList: [Trailer]
+    var episodes: [Episode]?
     
     var numberOfSeasonDisplay: String {
         if let num = numberOfSeasons {

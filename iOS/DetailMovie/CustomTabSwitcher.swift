@@ -10,6 +10,10 @@ import SwiftUI
 struct CustomTabSwitcher: View {
     
     @State private var currentTab: CustomTab = .episode
+    @Binding var showSeasonPicker: Bool
+    @Binding var selectedSeason: Int
+    
+    var movie: Movie
     var tabs: [CustomTab]
     
     func widthForTab(_ tab: CustomTab) -> CGFloat {
@@ -20,29 +24,39 @@ struct CustomTabSwitcher: View {
     var body: some View {
         VStack {
             ScrollView(.horizontal, showsIndicators: false, content: {
-                HStack {
+                HStack(spacing: 20) {
                     ForEach(tabs, id: \.self) { tab in
                         VStack {
                             // red bar
                             Rectangle()
                                 .frame(width: widthForTab(tab), height: 6)
-                                .foregroundColor(.red)
+                                .foregroundColor(tab == currentTab ? .red : .clear)
                             
                             //button
                             Button(action: {
-                                
+                                currentTab = tab
                             }, label: {
                                 Text(tab.rawValue)
                                     .font(.system(size: 16, weight: .bold))
+                                    .foregroundColor(tab == currentTab ? .white : .gray)
                             })
+                            .frame(width: widthForTab(tab), height: 30)
                         }
                     }
                 }
             })
             
             //SELECTED VIEW
-            
+            switch currentTab {
+            case .episode:
+                EpisodeView(episodes: movie.episodes ?? [], showSeasonPicker: $showSeasonPicker, selectedSeason: $selectedSeason)
+            case .trailers:
+                TrailerList(trailers: movie.trailerList)
+            case .more: //Text("Hasdas")
+                MoreLikeThis(movies: movie.moreLikeThisMovies)
+            }
         }
+        .padding(.leading, 5)
         .foregroundColor(.white)
     }
 }
@@ -58,7 +72,7 @@ struct CustomTabSwitcher_Previews: PreviewProvider {
         ZStack {
             Color.black
                 .edgesIgnoringSafeArea(.all)
-            CustomTabSwitcher(tabs: [.episode,.trailers,.more])
+            CustomTabSwitcher(showSeasonPicker: .constant(false) , selectedSeason: .constant(1), movie: exampleMovie1, tabs: [.episode,.trailers,.more])
         }
     }
 }
