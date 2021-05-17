@@ -31,6 +31,7 @@
 		88EBC23A264FAD5000618627 /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EBC239264FAD5000618627 /* SmallVerticalButton.swift */; };
 		88EBC23C264FB07E00618627 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EBC23B264FB07E00618627 /* PlayButton.swift */; };
 		88EBC243264FC33600618627 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EBC242264FC33600618627 /* MovieDetail.swift */; };
+		88F03D562652B6A70046022A /* HomeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F03D552652B6A70046022A /* HomeStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		88EBC239264FAD5000618627 /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
 		88EBC23B264FB07E00618627 /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		88EBC242264FC33600618627 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
+		88F03D552652B6A70046022A /* HomeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			children = (
 				88EBC22A264F9EDD00618627 /* HomeView.swift */,
 				88EBC235264FA0F300618627 /* HomeVM.swift */,
+				88F03D552652B6A70046022A /* HomeStack.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				88EBC230264F9F9600618627 /* Movie.swift in Sources */,
 				88EBC21C264F9EAD00618627 /* NetFlixApp.swift in Sources */,
 				84CC2F322652107C0084C735 /* MoreLikeThis.swift in Sources */,
+				88F03D562652B6A70046022A /* HomeStack.swift in Sources */,
 				8807AE1526515BB200E9AE94 /* CustomTabSwitcher.swift in Sources */,
 				84A072F626522AFF00F7E9F1 /* TrailerList.swift in Sources */,
 				88EBC23A264FAD5000618627 /* SmallVerticalButton.swift in Sources */,
