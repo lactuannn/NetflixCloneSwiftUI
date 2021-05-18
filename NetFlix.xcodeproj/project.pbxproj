@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8437D22B26538BC800862A0B /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437D22926538BC800862A0B /* SearchBar.swift */; };
+		8437D22C26538BC800862A0B /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437D22A26538BC800862A0B /* SearchView.swift */; };
+		8437D23026538C3000862A0B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437D22F26538C3000862A0B /* Colors.swift */; };
+		8437D23426538C3F00862A0B /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437D23326538C3E00862A0B /* ActivityIndicator.swift */; };
 		84A072E82652264100F7E9F1 /* Trailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A072E72652264100F7E9F1 /* Trailer.swift */; };
 		84A072EE2652269B00F7E9F1 /* SwiftUIVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A072ED2652269B00F7E9F1 /* SwiftUIVideoView.swift */; };
 		84A072F226522A3400F7E9F1 /* VideoPreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A072F126522A3400F7E9F1 /* VideoPreviewImage.swift */; };
@@ -35,6 +39,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8437D22926538BC800862A0B /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		8437D22A26538BC800862A0B /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		8437D22F26538C3000862A0B /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		8437D23326538C3E00862A0B /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		84A072E72652264100F7E9F1 /* Trailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trailer.swift; sourceTree = "<group>"; };
 		84A072ED2652269B00F7E9F1 /* SwiftUIVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIVideoView.swift; sourceTree = "<group>"; };
 		84A072F126522A3400F7E9F1 /* VideoPreviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewImage.swift; sourceTree = "<group>"; };
@@ -139,6 +147,8 @@
 				88EBC22A264F9EDD00618627 /* HomeView.swift */,
 				88EBC235264FA0F300618627 /* HomeVM.swift */,
 				88F03D552652B6A70046022A /* HomeStack.swift */,
+				8437D22926538BC800862A0B /* SearchBar.swift */,
+				8437D22A26538BC800862A0B /* SearchView.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -167,6 +177,8 @@
 		88EBC240264FC30C00618627 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				8437D23326538C3E00862A0B /* ActivityIndicator.swift */,
+				8437D22F26538C3000862A0B /* Colors.swift */,
 				88EBC233264FA00900618627 /* GlobalHelpers.swift */,
 			);
 			path = Helpers;
@@ -293,16 +305,20 @@
 				84A072E82652264100F7E9F1 /* Trailer.swift in Sources */,
 				8807AE132651144100E9AE94 /* Episode.swift in Sources */,
 				88EBC22B264F9EDD00618627 /* HomeView.swift in Sources */,
+				8437D23426538C3F00862A0B /* ActivityIndicator.swift in Sources */,
 				88EBC236264FA0F300618627 /* HomeVM.swift in Sources */,
 				84A072F226522A3400F7E9F1 /* VideoPreviewImage.swift in Sources */,
 				88EBC21E264F9EAD00618627 /* ContentView.swift in Sources */,
 				88EBC232264F9FBE00618627 /* StandardHomeMovie.swift in Sources */,
 				88EBC238264FA6A400618627 /* TopMoviePreview.swift in Sources */,
 				84A072FA26522F2400F7E9F1 /* EpisodeView.swift in Sources */,
+				8437D22C26538BC800862A0B /* SearchView.swift in Sources */,
 				88EBC230264F9F9600618627 /* Movie.swift in Sources */,
 				88EBC21C264F9EAD00618627 /* NetFlixApp.swift in Sources */,
+				8437D23026538C3000862A0B /* Colors.swift in Sources */,
 				84CC2F322652107C0084C735 /* MoreLikeThis.swift in Sources */,
 				88F03D562652B6A70046022A /* HomeStack.swift in Sources */,
+				8437D22B26538BC800862A0B /* SearchBar.swift in Sources */,
 				8807AE1526515BB200E9AE94 /* CustomTabSwitcher.swift in Sources */,
 				84A072F626522AFF00F7E9F1 /* TrailerList.swift in Sources */,
 				88EBC23A264FAD5000618627 /* SmallVerticalButton.swift in Sources */,

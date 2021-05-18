@@ -10,6 +10,8 @@ import SwiftUI
 struct HomeStack: View {
     
     var vm: HomeVM
+    var topRowSelection: HomeTopRow
+    
     @Binding var movieDetailToShow: Movie?
     
     var body: some View {
@@ -25,7 +27,7 @@ struct HomeStack: View {
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     LazyHStack {
-                        ForEach(vm.getMovies(forCat: category)) { movie in
+                        ForEach(vm.getMovies(forCat: category, homeRow: topRowSelection)) { movie in
                             StandardHomeMovie(movie: movie)
                                 .frame(width: 100, height: 200)
                                 .padding(.horizontal, 20)
@@ -35,6 +37,19 @@ struct HomeStack: View {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+struct HomeStack_Previews: PreviewProvider {
+    static var previews: some View {
+        ZStack {
+            Color.black
+                .edgesIgnoringSafeArea(.all)
+            
+            ScrollView {
+                HomeStack(vm: HomeVM(), topRowSelection: .home, movieDetailToShow: .constant(nil))
             }
         }
     }
